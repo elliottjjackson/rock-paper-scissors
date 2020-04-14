@@ -8,7 +8,53 @@
 
   <body></body>
   <script>
-    function playRound(playerSelection, computerSelection){
+    function game(){
+      Result = playRound();
+      let wins = 0;
+      if (Result === 'You Win!') {
+        ++wins;
+      } else if (Result === "You lose!") {
+        --wins;
+      }
+
+      Result = playRound();
+      if (Result === 'You Win!') {
+        ++wins;
+      } else if (Result === "You lose!") {
+        --wins;
+      }
+
+      Result = playRound();
+      if (Result === 'You Win!') {
+        ++wins;
+      } else if (Result === "You lose!") {
+        --wins;
+      }
+      
+      Result = playRound();
+      if (Result === 'You Win!') {
+        ++wins;
+      } else if (Result === "You lose!") {
+        --wins;
+      }
+
+      Result = playRound();
+      if (Result === 'You Win!') {
+        ++wins;
+      } else if (Result === "You lose!") {
+        --wins;
+      }
+
+      if (wins > 0) {
+        console.log(`You're the winner!`);
+      } else if (wins = 0) {
+        console.log("Wow, 5 ties!");
+      } else {
+        console.log("You lost in the 5 rounds :(");
+      }
+    }
+
+    function playRound(){
       playerResult = playerPlay();
       computerResult = computerPlay();
 
@@ -34,6 +80,7 @@
       }
 
       console.log(Result);
+      return Result;
     }
 
     function playerPlay() {
@@ -63,7 +110,7 @@
 
 
 
-    Result = playRound();
+    play = game();
   </script>
 
 </html>
