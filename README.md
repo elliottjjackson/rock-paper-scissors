@@ -1,4 +1,4 @@
-<title>Rock, Paper, Scissors Game</title>
+<h1>Rock, Paper, Scissors Game</h1>
 
 
 <p>
